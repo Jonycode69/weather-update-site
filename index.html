@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather update</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <main>
+        <img src="images/cloud.png" alt="background" class="background">
+        <section class="nav-bar">
+            <nav>
+                <ul class="list-items">
+                    <li><a href="#display">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="">Climate Change</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            </nav>
+        </section>
+        <section class="text-title" id="display">
+            <h2>Daily Weather Forecast and News</h2>
+        
+        <div class="card" id="card">
+          <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false
+            " class="search-bar">
+            <button class="search-button"><img src="images/search.png"></button>
+          </div>
+          <div class="error">
+            <p>invalid city name!</p>
+          </div>
+          <div class="weather">
+            <img src="images/rain.png" alt="rain-img" class="weather-icon">
+            <h1 class="temp">28°c</h1>
+            <h2 class="city">Lagos</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                    <div class="col">
+                        <img src="images/wind.png">
+                        <div>
+                            <p class="wind">15 Km/hr</p>
+                            <p>Wind Speed</p>
+                        </div>
+                 </div>
+            </div>
+          </div>
+        </div>
+    </section>
+        <section id="news" class="news">
+            <div class="news-text">
+            <h2 class="news-title">Weather Forecast News</h2>
+            <p class="news-paragraph">The sunshine and warmth will continue across most of the state today. However, a cold front moving in from the north will bring rain to the northern regions. Expect showers throughout the day, with some heavier rain possible in the afternoon. Temperatures will be cooler in the north, with highs in the [10deg] range.</p>
+        
+        <div class="images">
+        <img src="images/image1.png" alt="sun">
+        <img src="images/imagesy.png" alt="sunny">
+    </div>
+            <p class="news-paragraph"><b>Stay Safe:</b> Remember to stay hydrated and wear sunscreen if you are spending time outdoors. If you are traveling to the north, be sure to pack an umbrella and be prepared for cooler temperatures.</p>
+        </div>
+        </section>
+        <section id="contact" class="contact">
+          <div class="sub">
+            <h2>Subscribe Our Newsletter<br>For Weather Update</h2>
+          </div>
+          <div class="sign-up">
+            <input type="text" placeholder="Enter your name" name="name" class="contact-text">
+            <input type="text" placeholder="Enter your email" name="email" class="contact-text">
+            <input type="button" name="Subscribe" value="Subscribe" class="contact-btn">
+          </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
